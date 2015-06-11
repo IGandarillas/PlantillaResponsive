@@ -1,0 +1,59 @@
+/*LESS Base-Default*/
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:900|Josefin+Sans:400);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after {display: table;  content: ''; }
+.clearfix:after { clear: both; }
+html,body{
+	height: 100%;
+}
+html{
+	
+
+
+
+}
+#grid.scroll{
+	overflow-y: scroll;
+}
+.noscroll{
+	overflow-y: hidden;
+}
+#grid.item-grid.opacity{
+	opacity: .7;
+	transition: opacity .5s;
+	.main-transition();
+}
+body.opacity{
+	background:rgba(0,0,10,0.5)!important;
+	//transition:background 0.5s;
+	//.main-transition();
+}
+body {
+	height: auto;
+	min-height: 100%;
+	background: @primary-color;
+	color: #dbdbdb;
+	font-weight: 400;
+	font-size: 1em;
+	font-family: "PT Serif", "Helvetica Neue", Helvetica, sans-serif;
+	overflow-x: hidden;
+	transition:background 0.5s;
+	.main-transition();
+}
+h2{
+	font-size:1em;
+}
+a {
+	color: @primary-color-text;
+	text-decoration: none;
+}
+li{
+	list-style:none;
+}
+a:hover,
+a:focus {
+	outline: none;
+	color: #fff ;
+}
